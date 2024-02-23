@@ -22,5 +22,5 @@ public class factrorial1to5 {
 
     }
    System.out.println(sum);
-
+//23 no work
 }}
