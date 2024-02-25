@@ -10,10 +10,18 @@ public class simulated_landing {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int count = 3;
-        int secret=123456;
-        System.out.println("请输入一个密码");
-        String password = in.nextLine();
-        if(password.equals(secret))
+
+        while (count!=0){
+            System.out.println("输入你的密码");
+            String password = in.nextLine();
+            if(password.equals("hello")){
+                System.out.println("登陆成功");
+                break;
+            }else{
+                count--;
+                System.out.println("你还有 "+count+"次机会");
+            }
+        }
     }
 
 }
