@@ -13,6 +13,7 @@ public class guess_number {
         //TODO:nextInt 里面不写任何数字的时候,产生的随机数是什么范围
         double randNum = random.nextInt(100);//[0~100)
         System.out.println("随机数是:"+randNum);
+
         while (true){
             System.out.println("输入你要猜的数字");
             int num = scan.nextInt();
