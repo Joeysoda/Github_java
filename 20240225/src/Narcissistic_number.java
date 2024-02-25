@@ -18,7 +18,7 @@ public class Narcissistic_number {
             //2.求tmp的每一位
             int sum=0;
                 while(tmp!=0){
-                    sum+=Math.pow(tmp%10,count);
+                    sum+=Math.pow(tmp%10,count);//tmp的count次方
                     tmp/=10;//12
                 }
                 if(sum==i){
