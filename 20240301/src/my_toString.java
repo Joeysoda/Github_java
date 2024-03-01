@@ -18,6 +18,7 @@ public class my_toString {
             return "[]";
         }
 
+
         String ret = "[";
         for(int i=0;i<array.length;i++){
             ret=ret + array[i];
