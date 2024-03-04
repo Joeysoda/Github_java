@@ -5,43 +5,40 @@
  */
 public class left_rotation_method {
 
+        public static String[] leftRotate(int integer,String[] arr){
+            int n= arr.length;
+            String[] rotatedArr=new String [n];
 
-        public static String[] leftRotateArray(int d, String[] arr) {
-            int n = arr.length;
-            String[] rotatedArr = new String[n];
-
-            // Perform left rotation
             for (int i = 0; i < n; i++) {
-                rotatedArr[(i + n - d) % n] = arr[i];
-            }
-
-            return rotatedArr;
+                rotatedArr[(i + n - integer) % n] = arr[i];
+                
+            }return rotatedArr;
         }
 
 
-        public static void main(String[] args) {
-        // Checking if there are enough arguments
-        if (args.length < 2) {
-            System.out.println("Usage: java LeftRotation <d> <element1> <element2> ...");
 
-        }
 
-        // Parsing the value of d from command line argument
-        int d = Integer.parseInt(args[0]);
+    public static void main(String[] args) {
 
-        // Extracting elements from command line arguments
-        String[] elements = new String[args.length - 1];
-        System.arraycopy(args, 1, elements, 0, args.length - 1);
+        //1. 从键盘获取第一个数字(利用parseInt将String转化为int类型)
+        int integer=Integer.parseInt(args[0]);
 
-        // Performing left rotation
-        String[] result = leftRotateArray(d, elements);
 
-        // Outputting the result array
+        //2.从键盘获取后续内容,将其存放到新数组elements中
+        String[] elements = new String[args.length-1];
+
+        //利用arraycopy(原数组,原数组起始复制点,新数组,新数组起始复制点,复制元素数)
+        System.arraycopy(args, 1,elements, 0, args.length-1);
+
+        //3.调用方法
+        String[] result = leftRotate(integer, elements);
+
+        //4.输出
         for (String element : result) {
             System.out.print(element + " ");
         }
-
     }
+
 
 }
 
