@@ -16,18 +16,29 @@ public class Person {
 
         //成员方法
         public void eat(){
-            System.out.println(name+" 正在吃饭");
+            System.out.println(this.name+" 正在吃饭");
         }
         public void sleep(){
-            System.out.println(name+"正在睡觉");
+            System.out.println(this.name+"正在睡觉");
         }
         public void show(){
-            System.out.println("姓名: "+name+"年龄："+age+"性别："+sex);
+            System.out.println("姓名: "+this.name+"年龄："+this.age+"性别："+this.sex);
 
         }
 
+        //构造方法
+        public Person(){
+            System.out.println("不带参数的构造方法");
+        }
 
-            public static void main(String[] args) {
+    public Person(String name, int age, String sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        System.out.println("带有三个参数的构造方法");
+    }
+
+    public static void main(String[] args) {
                 //类的实例化
                 Person person1=new Person();
                 person1.age = 10;
@@ -36,10 +47,13 @@ public class Person {
                 person1.show();
 
                 Person person2=new Person();
-                person2.age = 10;
-                person2.name = "zhangsan";
-                person2.sex = "男";
+                person2.age = 19;
+                person2.name = "小红";
+                person2.sex = "女";
                 person2.show();
+
+                // 利用构造方法的实例化
+                Person person3=new Person("lisa",32,"女");
             }
         }
 
