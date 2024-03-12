@@ -54,6 +54,7 @@ public class Person {
 
                 // 利用构造方法的实例化
                 Person person3=new Person("lisa",32,"女");
+                person3.show();
             }
         }
 
