@@ -11,8 +11,34 @@ public class Student_encapsulation {
                 2.默认值是null
              */
             private String name;
-            public int age;
-            public String sex;
+            private int age;
+            private String sex;
+
+
+            //自动生成
+            public String getName(){
+                return this.name;
+            }
+
+            public void setName(String name) {
+                this.name = name;
+            }
+
+            public int getAge() {
+                return age;
+            }
+
+            public void setAge(int age) {
+                this.age = age;
+            }
+
+            public String getSex() {
+                return sex;
+            }
+
+            public void setSex(String sex) {
+                this.sex = sex;
+            }
 
             //成员方法
             public void eat() {
@@ -44,6 +70,7 @@ public class Student_encapsulation {
             //类的实例化
             Student_encapsulation student1 =  new Student_encapsulation();
             //student1.name="JieZHANG";由于此处name被修饰成private，导致在class Student外的内容不能被修饰
+              student
         }
 
 }
