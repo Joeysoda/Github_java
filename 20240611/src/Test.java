@@ -1,36 +1,63 @@
 /**
  * Description:
  * Date: 2024-06-11
- * Time: 13:53
+ * Time: 15:52
  */
-//public 开头的只能是文件名 例如public class Test
-class WashMachine{
-    public String brand; // 品牌
-    public String type; // 型号
-    public double weight; // 重量
-    public double length; // 长
-    public double width; // 宽
-    public double height; // 高
-    public String color; // 颜色
-    public void washClothes(){ // 洗衣服
-        System.out.println("洗衣功能");
+class Person {
+    /*
+    attributes
+     */
+    public String name;
+    public int age;
+    public String sex;
+
+    /*
+    methods
+     */
+    public void sleep(){
+        System.out.println(this.name + "Sleeping!");
     }
-    public void dryClothes(){ // 脱水
-        System.out.println(brand+"脱水功能");
+
+    public void show(){
+        System.out.println("Name:"+this.name+" age:"+this.age+" sex:"+this.sex);
     }
-    public void setTime(){ // 定时
-        System.out.println("定时功能");
+
+    /*
+    constructor methods
+     */
+    public Person(){
+        System.out.println("Without prarteters");
+    }
+
+    public Person(String name, int age, String sex) {
+        System.out.println("With parameters");
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
     }
 }
 public class Test{
     public static void main(String[] args) {
-        System.out.println("Test method");
-        //实例化对象
-        WashMachine washMachine = new WashMachine();
-        //可以通过对象的引用+.访问对象的属性和方法
-        washMachine.brand = "haier";
-        washMachine.dryClothes();
-        System.out.println(washMachine.brand);
+        Person person1 = new Person();
+        person1.age = 10;
+        person1.name ="z";
+        person1.sex= "male";
+        person1.show();
+        System.out.println("---------------");
+
+        Person person2 = new Person();
+        person2.age = 1;
+        person2.name ="zs";
+        person2.sex= "malesfas";
+        person2.show();
+        System.out.println("---------------");
+
+        Person person3 = new Person();
+        person3.show();
+        System.out.println("---------------");
+        Person person4 = new Person("a",12,"male");
+        person4.show();
     }
+
 }
 
