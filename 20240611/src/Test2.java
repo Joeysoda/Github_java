@@ -6,7 +6,7 @@ class Student {
     private String name;
     private int age;
     private String sex;
-
+    public static String classRoom="112";
     /*
         methods
          */
@@ -36,10 +36,18 @@ class Student {
         this.sex = sex;
     }
 
+
+    public Student(String name, int age, String sex, String classRoom) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.classRoom = classRoom;
+    }
+
     /*
-    创建setter和getter分别进行赋值和访问
-    get和set 用来对private进行访问
-     */
+        创建setter和getter分别进行赋值和访问
+        get和set 用来对private进行访问
+         */
     public void setName(String name) {
         this.name = name;
     }
@@ -66,7 +74,24 @@ class Student {
 }
 
 public class Test2{
+
     public static void main(String[] args) {
+    Student student2 = new Student("张三",13,"male","112");
+    Student student3 = new Student("李四",13,"male","112");
+    Student student4 = new Student("王五",13,"male","112");
+        System.out.println(Student.classRoom);
+        //静态成员变量不依赖于对象
+    }
+
+
+
+
+
+
+
+
+
+    public static void main1(String[] args) {
         Student student1 = new Student();
         //这里不能使用,因为name是private
         //private只能在当前class只用
