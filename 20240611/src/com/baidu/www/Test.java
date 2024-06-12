@@ -6,4 +6,6 @@ package com.baidu.www;
  * Time: 9:33
  */
 public class Test {
+    String name;
+    //default
 }
