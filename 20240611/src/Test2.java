@@ -22,6 +22,7 @@ class Student {
         System.out.println("Name:"+this.name+" age:"+this.age+" sex:"+this.sex);
     }
 
+
     /*
     constructor methods
      */
@@ -42,6 +43,12 @@ class Student {
         this.age = age;
         this.sex = sex;
         this.classRoom = classRoom;
+    }
+
+
+    {//实例代码块执行顺序先于构造代码块
+        System.out.println("构造块/实例代码块/非静态代码块");
+        this.name = "zhangsan";
     }
 
     /*
@@ -80,15 +87,9 @@ public class Test2{
     Student student3 = new Student("李四",13,"male","112");
     Student student4 = new Student("王五",13,"male","112");
         System.out.println(Student.classRoom);
+        System.out.println(student2.getName());
         //静态成员变量不依赖于对象
     }
-
-
-
-
-
-
-
 
 
     public static void main1(String[] args) {
