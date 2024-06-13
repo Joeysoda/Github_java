@@ -13,9 +13,9 @@ class Animal{
     public String color;
 
 
+
     //添加不带参数构造方法
     public Animal(){
-
     }
 
     //带参数构造方法
@@ -29,6 +29,10 @@ class Animal{
     //方法
     public void eat(){
         System.out.println(this.name+"正在吃饭");
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }
 
@@ -68,6 +72,7 @@ public class Test2 {
         dog.color="yellow";
         dog.eat();
         dog.bark();
+        dog.setColor(dog.color);
 
         //使用带参数构造方法
         Cat cat = new Cat("hua",3,"White");
