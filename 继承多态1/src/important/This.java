@@ -1,3 +1,5 @@
+package important;
+
 /**
  * Description:
  * Date: 2024-06-13
@@ -17,7 +19,7 @@ class Example {
     }
 
     void func() {
-        System.out.println("This is func method");
+        System.out.println("important.This is func method");
     }
 
     void anotherFunc() {

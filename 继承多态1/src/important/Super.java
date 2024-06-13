@@ -1,3 +1,5 @@
+package important;
+
 /**
  * Description:
  * Date: 2024-06-13
@@ -7,11 +9,11 @@ class Parent {
     int data = 10;
 
     Parent() {
-        System.out.println("Parent Constructor");
+        System.out.println("important.Parent Constructor");
     }
 
     void func() {
-        System.out.println("Parent func method");
+        System.out.println("important.Parent func method");
     }
 }
 
@@ -20,11 +22,11 @@ class Child extends Parent {
 
     Child() {
         super(); // 调用父类的构造方法
-        System.out.println("Child Constructor");
+        System.out.println("important.Child Constructor");
     }
 
     void func() {
-        System.out.println("Child func method");
+        System.out.println("important.Child func method");
     }
 
     void display() {
