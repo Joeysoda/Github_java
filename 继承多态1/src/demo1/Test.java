@@ -64,6 +64,10 @@ class Person{
 }
 
 public class Test {
+    public boolean a;
+    public boolean d;
+    public boolean e;
+
     public static void main(String[] args) {
         Person person = new Person();
     }
