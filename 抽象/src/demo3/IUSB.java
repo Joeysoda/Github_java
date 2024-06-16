@@ -6,6 +6,10 @@ package demo3;
  * Time: 15:53
  */
 public interface IUSB {
-    void openDevice();
+    //变量默认为public s f
+    public static final double brand = 3.0;
+
+    //方法默认是public abstract
+    public abstract void openDevice();
     void closeDevice();
 }
