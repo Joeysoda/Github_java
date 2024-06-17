@@ -49,11 +49,7 @@ public class Test {
         System.out.println(student2.m.money);
         System.out.println("===========");
         student2.m.money = 100;
-        System.out.println(student1.m.money);
-        System.out.println(student2.m.money);
-        System.out.println("浅拷贝");
-        student2.m.money=100;
-        System.out.println("===========");
+
 
         System.out.println(student1.m.money);
         System.out.println(student2.m.money);
