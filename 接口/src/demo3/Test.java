@@ -6,8 +6,13 @@ package demo3;
  * Time: 15:40
  */
 
-class Money {
+class Money implements Cloneable {
     public double money = 12.5;
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
 
 class Student implements Cloneable{
@@ -21,7 +26,10 @@ class Student implements Cloneable{
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        //super.clone();
+        Student tmp = (Student)super.clone();
+        tmp.m= (Money) this.m.clone();
+        return tmp;
     }
 
     @Override
@@ -44,6 +52,11 @@ public class Test {
         System.out.println(student1.m.money);
         System.out.println(student2.m.money);
         System.out.println("浅拷贝");
+        student2.m.money=100;
+        System.out.println("===========");
 
+        System.out.println(student1.m.money);
+        System.out.println(student2.m.money);
+        System.out.println("深拷贝");
     }
 }
