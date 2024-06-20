@@ -6,6 +6,25 @@
 public class Test {
 
 
+    public static void main(String[] args) {
+        String str = "abcdef";
+        String str2 = "ABCDEF";
+
+        //获取下标对应字符
+        char ch = str.charAt(1);
+        System.out.println(ch);
+
+        //获取字符对应的下标
+        System.out.println(str.indexOf("bc"));
+
+
+        //从后往前找
+        String str3 ="abababadbcbd";
+        System.out.println(str3.lastIndexOf('a'));
+        //从指定开始从后往前找
+        System.out.println(str3.lastIndexOf('a',4));
+
+    }
     public static void main2(String[] args) {
         String str = "abcdef";
         String str2 = "abcdef";
