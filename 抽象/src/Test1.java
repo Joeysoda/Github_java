@@ -4,6 +4,7 @@
  * Time: 22:16
  */
  abstract class Shape{
+     //抽象类不能被实例化
      public String name;
 
      public  abstract void draw();
@@ -26,6 +27,7 @@ class Cycle extends Shape{
     }
 }
 class Triangle extends Shape{
+
 
     //通过重写继承抽象类
     @Override
