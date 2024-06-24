@@ -19,16 +19,16 @@ public class Duck extends Animal implements IFlying, IRunning, ISwimming{
 
     @Override
     public void fly(){
-        System.out.println("fly");
+        System.out.println(this.name+"is flying");
     }
 
     @Override
     public void run() {
-        System.out.println("run");
+        System.out.println(this.name+" is runing");
     }
 
     @Override
     public void swim() {
-        System.out.println("swim");
+        System.out.println(this.name+" is swimming");
     }
 }
