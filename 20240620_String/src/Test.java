@@ -10,8 +10,8 @@ public class Test {
 
     //分割0
     public static void main(String[] args) {
-        String str = "abc&def&hij";
-        String [] strings = str.split("&");
+        String str = "abc&def=h&ij";
+        String [] strings = str.split("&|=");
         for (String s :strings){
             System.out.println(s);
         }
