@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Locale;
+
 /**
  * Description:
  * Date: 2024-06-20
@@ -5,8 +8,35 @@
  */
 public class Test {
 
-
     public static void main(String[] args) {
+
+    }
+    //数字转字符串
+    public static void mai4n(String[] args) {
+        String s1  =  String.valueOf(1234);
+        String s2 = String.valueOf(12.34);
+        String s3 = String.valueOf(true);
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+
+        //大小写转换
+        String str2 = "ABCD";
+        String str3 = str2.toLowerCase();
+        System.out.println(str3);
+
+
+        String str4 = "abcd";
+        String str5 = str4.toUpperCase();
+        System.out.println(str5);
+
+
+        //把字符串转换为数组
+        char[]array = str4.toCharArray();
+        System.out.println(Arrays.toString(array));
+    }
+
+    public static void main3(String[] args) {
         String str = "abcdef";
         String str2 = "ABCDEF";
 
@@ -21,7 +51,7 @@ public class Test {
         //从后往前找
         String str3 ="abababadbcbd";
         System.out.println(str3.lastIndexOf('a'));
-        //从指定开始从后往前找
+        //从指定开始从后往前找字符 a
         System.out.println(str3.lastIndexOf('a',4));
 
     }
