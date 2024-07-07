@@ -1,11 +1,9 @@
-import com.sun.tools.javac.Main;
-
 /**
  * Description:
  * Date: 2024-07-07
  * Time: 16:11
  */
-public class Test {
+public class Yield {
     public static void main(String[] args) {
         String data = "one";
         int result = switch (data){
