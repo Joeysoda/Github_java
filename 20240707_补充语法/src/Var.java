@@ -9,5 +9,6 @@ public class Var {
     public static void main(String[] args) {
         var age = 10;//var 不能在字段中使用
         var name = "Hello";
+
     }
 }
