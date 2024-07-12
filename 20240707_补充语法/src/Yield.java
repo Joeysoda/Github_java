@@ -23,7 +23,6 @@ public class Yield {
             case "three" ->3;
             default->4;
 
-
         };
         System.out.println(result);
     }
