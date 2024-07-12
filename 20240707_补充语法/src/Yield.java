@@ -24,7 +24,6 @@ public class Yield {
             default->4;
 
 
-
         };
         System.out.println(result);
     }
