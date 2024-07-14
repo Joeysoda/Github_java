@@ -21,6 +21,7 @@ public class Yield {
             case "one"-> 1;
             case "two"-> 2;
             case "three" ->3;
+
             default->4;
         };
 
