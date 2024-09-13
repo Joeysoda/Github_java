@@ -24,6 +24,7 @@ public class 泛型 {
 
 
 
+
         MyArray<Integer> myArray = new MyArray<>();
         MyArray<String> myArray2 = new MyArray<>();
         myArray.setValue(0,10);
