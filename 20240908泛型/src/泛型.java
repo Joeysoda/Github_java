@@ -23,7 +23,6 @@ public class 泛型 {
     public static void main(String[] args) {
 
 
-
         MyArray<Integer> myArray = new MyArray<>();
         MyArray<String> myArray2 = new MyArray<>();
         myArray.setValue(0,10);
