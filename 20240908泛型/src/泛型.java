@@ -23,7 +23,6 @@ class MyArray<T>{
 
 
 
-
 public class 泛型 {
     public static void main(String[] args) {
 
