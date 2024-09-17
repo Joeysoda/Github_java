@@ -34,7 +34,12 @@ public class Object比较是否相等 {
     public static void main(String[] args) {
         Person p1 = new Person("Alice", 30);
         Person p2 = new Person("Alice", 30);
-        Person p3 = new Person("Alice", 30);
+        Person p3 = new Person("Alice", 25);
+
+        //比较对象是否相等
+        System.out.println("p1.equals(p2): "+ p1.equals(p2));
+        System.out.println("p1.equals(p3): "+ p1.equals(p3));
+
     }
 
 }
