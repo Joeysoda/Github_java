@@ -6,7 +6,8 @@
 public class Test {
     public static void main(String[] args) throws InterruptedException {
         Thread t = new Thread(()->{
-            while (true){
+            for (int i = 0; i < 3; i++)
+            {
                 System.out.println("helloworld");
                 try {
                     Thread.sleep(1000);
@@ -15,11 +16,12 @@ public class Test {
                 }
             }
         },"自定义线程");
+        System.out.println(t.isAlive());
         t.start();
+        //t变为守护线程不能组织线程结束
 
-        System.out.println("线程ID"+ t.getId());
-        System.out.println("线程名字"+ t.getName());
-        System.out.println("线程状态"+ t.getState());
-        System.out.println("线程优先级"+t.getPriority());
+        System.out.println(t.isAlive());
+        Thread.sleep(5000);
+        System.out.println(t.isAlive());
     }
 }
