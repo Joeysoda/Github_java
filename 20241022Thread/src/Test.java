@@ -17,9 +17,9 @@ public class Test {
         },"自定义线程");
         t.start();
 
-        while (true){
-            System.out.println("Hello Main");
-            Thread.sleep(1000);
-        }
+        System.out.println("线程ID"+ t.getId());
+        System.out.println("线程名字"+ t.getName());
+        System.out.println("线程状态"+ t.getState());
+        System.out.println("线程优先级"+t.getPriority());
     }
 }
