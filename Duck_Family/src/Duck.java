@@ -4,12 +4,15 @@
  * Time: 10:38
  */
 public abstract class  Duck {
-    public FlyBehaviour flyBehaviour;
+    public Strategy_Fly strategyFly;
 
     public void performFly(){
-        flyBehaviour.fly();
+        strategyFly.fly();
     }
 
-    public void setFlyBehavior(FlyBehaviour fb) {
-        flyBehaviour = fb;}
+    public void setFlyBehavior(Strategy_Fly fb) {
+        strategyFly = fb;}
+
+    public abstract void display();
+
 }
