@@ -9,4 +9,5 @@ public class StrategyFlyNoWay implements Strategy_Fly {
         System.out.println("No Fly");
         System.out.println("No");
     }
+
 }
