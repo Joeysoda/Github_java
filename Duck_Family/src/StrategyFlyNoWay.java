@@ -7,7 +7,7 @@ public class StrategyFlyNoWay implements Strategy_Fly {
     @Override
     public void fly() {
         System.out.println("No Fly");
-        System.out.println("No");
+        System.out.println("No fly");   System.out.println("No");
     }
 
 }
