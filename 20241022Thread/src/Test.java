@@ -22,6 +22,7 @@ public class Test {
 
         System.out.println(t.isAlive());
         Thread.sleep(5000);
+
         System.out.println(t.isAlive());
     }
 }
