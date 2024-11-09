@@ -50,6 +50,7 @@ class Duck extends Animal implements Runnable, Swimmable, Flyable {
         System.out.println("鸭子在跑");
     }
 
+
     @Override
     public void swim() {
         System.out.println("鸭子在游泳");
