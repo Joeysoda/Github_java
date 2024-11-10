@@ -38,8 +38,6 @@ class Frog extends Animal implements Runnable, Swimmable {
         System.out.println("青蛙在跑");
     }
 
-
-
     @Override
     public void swim() {
         System.out.println("青蛙在游泳");
