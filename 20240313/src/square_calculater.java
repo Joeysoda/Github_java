@@ -12,6 +12,7 @@ public class square_calculater {
         int M =in.nextInt();
         System.out.println("Input an integer N: ");
 
+
         int N =in.nextInt();
         double sum=0;
         //sum=Math.pow(2,32);
