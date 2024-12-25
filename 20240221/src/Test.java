@@ -15,6 +15,8 @@ public class Test {
          */
 
 
+
+
 //short
         short b = 10;
         System.out.println(b);
@@ -22,6 +24,8 @@ public class Test {
         -2^15~2^15-1
         两个字节
          */
+
+        
 //byte字节类型
         byte c =127;
         System.out.println(c);
