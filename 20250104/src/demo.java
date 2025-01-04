@@ -9,24 +9,18 @@ import java.util.List;
 public class demo {
 
     class Team {
-        private List<Employee> employees;
+        private Employee employee; // 聚合关系
 
-        public Team() {
-            employees = new ArrayList<>();
-        }
-
-        public void addEmployee(Employee emp) {
-            employees.add(emp);
+        public Team(Employee employee) {
+            this.employee = employee;
         }
     }
 
     class Employee {
-        private String name;
-
-        public Employee(String name) {
-            this.name = name;
+        public Employee() {
         }
     }
+
 
 
 
