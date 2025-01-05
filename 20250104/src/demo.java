@@ -8,35 +8,30 @@ import java.util.List;
  */
 public class demo {
 
-    class Team {
-        private Employee employee; // 聚合关系
+class Team {
+    public Team (Person person){
 
-        public Team(Employee employee) {
-            this.employee = employee;
+    }
+}
+class Person{
+
+    public Person(){
+
+    }
+}//low coupling
+
+
+
+
+
+class House {
+    public House(Brick brick){
+
+    }
+    class Brick {
+        public Brick(){
+
         }
     }
-
-    class Employee {
-        public Employee() {
-        }
-    }
-
-
-
-
-
-
-
-    public class House{
-
-        public House(){
-        }
-
-        private class Brick{
-
-            public Brick (){
-
-            }
-        }
-    }
+  }
 }
