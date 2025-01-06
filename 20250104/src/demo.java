@@ -60,7 +60,7 @@ public class demo {
 //        }
 //    }
 //
-    abstract class Animal{
+    public abstract class Animal{
 
         public abstract void swim();
 //        public String name;
