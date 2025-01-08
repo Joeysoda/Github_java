@@ -89,9 +89,11 @@ class SHArabina extends Arabina {
     public Pizza createPizza(String type) {
         if (type.equals("Greek")) {
             return new GreekPizza();
-        } else if (type.equals("Cheese")) {
+        }
+        else if (type.equals("Cheese")) {
             return new CheesePizza();
-        } else {
+        }
+        else {
             return null;
         }
     }
@@ -101,12 +103,12 @@ public class FactoryMethodTest {
     public static void main(String[] args) {
         // 创建南京披萨工厂
         Arabina nbFactory = new NBArabina();
-        Pizza nbPizza = nbFactory.orderPizza("Greek");
+        Pizza Pizza1 = nbFactory.orderPizza("Greek");
         System.out.println("Ordered a Greek Pizza from Nanjing");
 
         // 创建上海披萨工厂
         Arabina shFactory = new SHArabina();
-        Pizza shPizza = shFactory.orderPizza("Cheese");
+        Pizza Pizza2 = shFactory.orderPizza("Cheese");
         System.out.println("Ordered a Cheese Pizza from Shanghai");
     }
 }
